@@ -1,0 +1,31 @@
+﻿@model EFDBFirstApproach2.Models.tblProduct
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Product-Details</h2>
+
+<table class="table>">
+    <tr>
+        <th>Product Name</th>
+        <th>@Model.productName</th>
+    </tr>
+
+    <tr>
+        <th>Introduced On</th>
+        <th>@Model.INtroduceOn</th>
+    </tr>
+
+    <tr>
+        <th>Product Id</th>
+        <th>@Model.productId</th>
+    </tr>
+
+    <tr>
+        <th>Category Id</th>
+        <th>@Model.catId</th>
+    </tr>
+
+
+
+</table>

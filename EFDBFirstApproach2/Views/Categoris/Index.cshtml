@@ -1,0 +1,21 @@
+﻿@model IEnumerable<EFDBFirstApproach2.Models.tblCategory>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>All Categoris</h2>
+
+<table class="table">
+    <tr>
+        <td>Category Id</td>
+        <td>Category Name</td>
+    </tr>
+    
+        @foreach(var c in Model)
+            {<tr>
+                <td>@c.CategoryId</td>
+                <td>@c.CategoryNmae</td>
+               </tr>
+            }
+    
+</table>

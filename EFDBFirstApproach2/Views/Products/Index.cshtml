@@ -1,0 +1,31 @@
+﻿@model IEnumerable<EFDBFirstApproach2.Models.tblProduct>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>All Products</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+        <th>Product Id</th>
+        <th>Product Name</th>
+            <th>Intro Date</th>
+            <th>Price</th>
+            <th>Category Id</th>
+    </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model)
+            {  
+            <tr>
+    <td>@item.productId</td>
+    <td><a href="/Products/Details/@item.productId">@item.productName</a></td>
+    <td>@item.INtroduceOn</td>
+    <td>@item.price</td>
+    <td>@item.catId</td>
+</tr>
+            }
+    </tbody>
+
+</table>
